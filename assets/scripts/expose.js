@@ -9,8 +9,8 @@ function init() {
   let hornsound = document.querySelector("audio");
   let hornImage = document.querySelector("img");
   hornSelection.addEventListener("change", (Event) => {
-    hornsound.src = "/assets/audio/" + Event.target.value + ".mp3";
-    hornImage.src = "/assets/images/" + Event.target.value + ".svg";
+    hornsound.src = "assets/audio/" + Event.target.value + ".mp3";
+    hornImage.src = "assets/images/" + Event.target.value + ".svg";
     if(Event.target.value == "party-horn"){
       jsConfetti.addConfetti();
     }
